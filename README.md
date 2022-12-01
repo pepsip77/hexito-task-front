@@ -1,29 +1,34 @@
-# vue-project
 
-This template should help get you started developing with Vue 3 in Vite.
+# Hexito task- Crypto converter
 
-## Recommended IDE Setup
+User story
+As a user I want to be able to convert EUR, USD or PLN to ANY crypto.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### Success Flow
+- Navigate to app
+- I see 3 input fields
+- Amount input (number)
+- currency select (EUR, USD, PLN)
+- crypto input (I can manually input: ETH, BTC, ADA or etc.)
+- Submit button
+- After submitting I should see some text on how much I’ll get crypto for that amount of
+  money.
 
-## Customize configuration
+### Tech requirements
+- Modern PHP framework
+- Modern CSS framework
+- Vue.js/React.js in front
+- API first approach (Exposed API, without auth)
+- Possibility to switch Crypto Clients (Implement interface).
+- Store user input and calculated amounts to the database.
+- README.md on how to launch app
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Crypto API to use: https://exchangerate.host/#/docs
 
-## Project Setup
+## Requirements
+- Node.js 16+
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+## How to run
+- Run ```npm install```
+- Change converter url in ```config/app.js``` if needed
+- Run project using ```npm run dev```
